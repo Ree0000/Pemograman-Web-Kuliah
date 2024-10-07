@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Volume Bola</title>
+    </head>
+    <body>
+        <h1>Menghitung Volume Bola</h1>
+        <p>Diameter = 15 cm</p>
+        <p id="jari"></p>
+        <p id="hasil"></p>
+
+        <button onclick="window.location.href='luasSegitiga.html'">Ke luas Segitiga</button>
+        <button onclick="window.location.href='sisiMiring.html'">Ke sisi miring</button>
+
+        <script>
+            function hitungVolume(diameter) {
+                const pi = 3.14;
+                let r = diameter / 2;
+                let luas = 3/4 * pi * r**3;
+                document.getElementById("jari").innerHTML = "Jari - jari = " + r + " cm";
+                
+                return luas + " cm\u00B3";
+            }
+
+
+            let diameter = 15;
+            let hasil = hitungVolume(diameter);
+
+            document.getElementById("hasil").innerHTML = "Volume = " + hasil;
+        </script>
+    </body>
+</html>

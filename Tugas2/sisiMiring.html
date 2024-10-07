@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Sisi Miring</title>
+    </head>
+    <body>
+        <h1>Menghitung Sisi miring</h1>
+        <p>Alas = 4 cm</p>
+        <p>Tinggi = 5 cm</p>
+        <p id="hasil"></p>
+
+        <button onclick="window.location.href='luasSegitiga.html'">Ke luas Segitiga</button>
+        <button onclick="window.location.href='volumeBola.html'">Ke volume bola</button>
+
+        <script>
+            let alas = 4;
+            let tinggi = 5;
+            let hasil = alas**2 + tinggi**2;
+
+            document.getElementById("hasil").innerHTML = "Sisi Miring = " + Math.sqrt(hasil) + " cm / " + Math.round(Math.sqrt(hasil)) + " cm";
+
+        </script>
+    </body>
+</html>

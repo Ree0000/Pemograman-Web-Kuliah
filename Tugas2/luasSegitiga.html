@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Luas Segitiga</title>
+    </head>
+    <body>
+        <h1>Menghitung Luas Segitiga</h1>
+        <p>Alas = 8 cm</p>
+        <p>Tinggi = 5 cm</p>
+        <p id="hasil"></p>
+
+        <button onclick="window.location.href='volumeBola.html'">Ke volume bola</button>
+        <button onclick="window.location.href='sisiMiring.html'">Ke sisi miring</button>
+
+        <script>
+            let alas = 8;
+            let tinggi = 5;
+            let hasil = alas * tinggi / 2;
+
+            document.getElementById("hasil").innerHTML = "Luas = " + hasil + " cm\u00B2";
+        </script>
+    </body>
+</html>
