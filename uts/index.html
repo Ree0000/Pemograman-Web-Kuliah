@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>e-commerce app</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>E-Commerce App</h1>
+
+            <nav>
+                <a href="#" onclick="showPage('products')">Produk</a>
+                <a href="#" onclick="showPage('cart')">Keranjang</a>
+                <a href="#" onclick="showPage('checkout')">Checkout</a>
+            </nav>
+        </header>
+
+        <main id="app">
+        <!--- produk --->
+            <section id="products" class="page">
+                <h2>Produk</h2>
+                <div id="product-list">
+                </div>
+            </section>
+
+        <!--- keranjang --->
+            <section id="cart" class="page hidden">
+                <h2>Keranjang</h2>
+                <div id="cart-list">
+                </div>
+                <p id="cart-total">Total: $0</p>
+            </section>
+
+        <!--- checkout --->
+            <section id="checkout" class="page hidden">
+                <h2>Checkout</h2>
+                <form id="checkout-form">
+                    <label>
+                        Nama:
+                        <input type="text" name="name" required>
+                    </label>
+                    <label>
+                        Address::
+                        <textarea type="text" name="address" required></textarea>
+                    </label>
+                    <button type="submit">Submit</button>
+                </form>
+                <p id="checkout-success" class="hidden">Terima Kasih telah berbelanja!</p>
+            </section>
+        </main>
+
+        <script src='script.js'></script>
+    </body>
+</html>
