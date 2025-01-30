@@ -1,0 +1,117 @@
+### Get all categories
+GET http://localhost:3000/categories
+
+### Create a new category
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+  "name": "Electronics"
+}
+
+### Update a category
+PUT http://localhost:3000/categories/0
+Content-Type: application/json
+
+{
+  "name": "Gadgets"
+}
+
+### Delete a category
+DELETE http://localhost:3000/categories/0
+
+### Get all products
+GET http://localhost:3000/products
+
+### Create a new product
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "Laptop",
+  "stock": 10
+}
+
+### Update a product
+PUT http://localhost:3000/products/0
+Content-Type: application/json
+
+{
+  "name": "Laptop",
+  "stock": 5
+}
+
+### Delete a product
+DELETE http://localhost:3000/products/0
+
+### Get all suppliers
+GET http://localhost:3000/suppliers
+
+### Create a new supplier
+POST http://localhost:3000/suppliers
+Content-Type: application/json
+
+{
+  "name": "Supplier A"
+}
+
+### Update a supplier
+PUT http://localhost:3000/suppliers/0
+Content-Type: application/json
+
+{
+  "name": "Supplier B"
+}
+
+### Delete a supplier
+DELETE http://localhost:3000/suppliers/0
+
+### Get all purchases
+GET http://localhost:3000/purchases
+
+### Create a new purchase
+POST http://localhost:3000/purchases
+Content-Type: application/json
+
+{
+  "productId": 0,
+  "supplierId": 0,
+  "quantity": 5
+}
+
+### Update a purchase
+PUT http://localhost:3000/purchases/0
+Content-Type: application/json
+
+{
+  "productId": 0,
+  "supplierId": 0,
+  "quantity": 10
+}
+
+### Delete a purchase
+DELETE http://localhost:3000/purchases/0
+
+### Get all sales
+GET http://localhost:3000/sales
+
+### Create a new sale
+POST http://localhost:3000/sales
+Content-Type: application/json
+
+{
+  "productId": 0,
+  "quantity": 2
+}
+
+### Update a sale
+PUT http://localhost:3000/sales/0
+Content-Type: application/json
+
+{
+  "productId": 0,
+  "quantity": 3
+}
+
+### Delete a sale
+DELETE http://localhost:3000/sales/0
